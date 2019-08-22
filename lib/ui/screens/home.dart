@@ -10,9 +10,9 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
+  int _activeBrand = 0;
   @override
   Widget build(BuildContext context) {
-    int _activeBrand = 0;
     return SafeArea(
       child: Scaffold(
         body: Row(
