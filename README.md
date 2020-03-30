@@ -9,8 +9,15 @@ I'd appreciate it if you could show your support by buying me some coffee. Thank
 
 https://www.buymeacoffee.com/bi3cp0Zk5
 
-<img src="screenshot1.png">
-<img src="screenshot2.png">
+<table>
+  <tbody>
+    <tr>
+      <td><img src='screenshot1.png' width='300' height='700'></td>
+      <td><img src='screenshot2.png' width='300' height='700'></td>
+     </tr>
+  </tbody>
+</table>
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
