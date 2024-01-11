@@ -5,7 +5,7 @@ import 'package:shopping_app/ui/screens/screens.dart';
 class ProductContainer extends StatelessWidget {
   final int id;
 
-  const ProductContainer({Key key, this.id}) : super(key: key);
+  const ProductContainer({Key? key, required this.id}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     var _containerColor = adidas_products[id]['product_color'];
@@ -48,8 +48,7 @@ class ProductContainer extends StatelessWidget {
                         children: <Widget>[
                           Text(
                             "${adidas_products[id]["product_name"]}",
-                            style:
-                                TextStyle(color: Colors.white, fontSize: 21),
+                            style: TextStyle(color: Colors.white, fontSize: 21),
                           ),
                           Text(
                             "${adidas_products[id]["product_price"]}",

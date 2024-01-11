@@ -3,7 +3,7 @@ import 'package:shopping_app/global.dart';
 
 class Details extends StatelessWidget {
   final int id;
-  const Details({Key key, this.id}) : super(key: key);
+  const Details({Key? key, required this.id}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     List<int> sizeList = [7, 8, 9, 10];
@@ -153,10 +153,14 @@ class Details extends StatelessWidget {
                         ),
                       ),
                     ),
-                    RaisedButton(
-                      padding: EdgeInsets.symmetric(horizontal: 45,vertical: 11), 
-                      color: cyan,
-                      shape: RoundedRectangleBorder(borderRadius: new BorderRadius.circular(30.0)),
+                    ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        padding:
+                            EdgeInsets.symmetric(horizontal: 45, vertical: 11),
+                        backgroundColor: cyan,
+                        shape: RoundedRectangleBorder(
+                            borderRadius: new BorderRadius.circular(30.0)),
+                      ),
                       onPressed: () {},
                       child: Text("Add to Cart"),
                     )
